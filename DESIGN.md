@@ -19,6 +19,8 @@ All component colours use the role tokens in `styles.css`. One light theme is su
 
 Layout: max width 1320 px; 4 px spacing base; 4/12 px control radii. Pills only denote tags. Body 17 px. Touch targets 44 px or more. Motion is limited to short state transitions and respects reduced motion.
 
+Interface icons must use SVG paths with currentColor or CSS geometry. Never use Unicode arrows, stars or checkmarks as UI icons: iOS can substitute colourful emoji. This applies to static markup, pseudo-elements and JavaScript-generated states. Preserve consistent sizing across mobile and desktop.
+
 ## Images
 
 The first supplied reference establishes the shaggy black creature with large yellow-green eyes. The shower and wet fur are incidental and must not define the brand. The second supplied reference establishes the shorn cat with a round black head, grey body, black paws and lion tail. Polina's collage establishes warmth, varied expressions, and domestic absurdity. Generated cutouts preserve these identities. No generic stock pet photographs.

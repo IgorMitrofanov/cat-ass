@@ -17,8 +17,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/fonts/dela-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/mascot-hero.webp" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261030-icons">
+  <script src="app.js?v=20261030-icons" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержимому</a>
@@ -26,14 +26,14 @@
     <header class="site-header wrap">
       <a class="brand" href="#" aria-label="Кошачье очко, на главную">
         <span class="brand-face"><img src="assets/mascot-hero.webp" alt="" width="70" height="70"></span>
-        <span class="brand-name">кошачье<br>очко<span class="brand-star" aria-hidden="true">✳</span></span>
+        <span class="brand-name">кошачье<br>очко<span class="brand-star" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M4.2 19.8 19.8 4.2"/></svg></span></span>
       </a>
       <nav aria-label="Основная навигация">
         <a href="#services">Что делаем</a>
         <a href="#characters">Кто эти чудики</a>
-        <a class="nav-action" href="#ticket">Хочу красиво <span aria-hidden="true">↗</span></a>
+        <a class="nav-action" href="#ticket">Хочу красиво <span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></a>
       </nav>
-      <a class="mobile-action" href="#ticket">Хочу красиво ↗</a>
+      <a class="mobile-action" href="#ticket">Хочу красиво <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></a>
     </header>
   </div>
     <main id="main">
@@ -43,18 +43,18 @@
           <p class="hero-intro">Груминг для котов, собак<br>и непростых характеров</p>
           <h1 id="hero-title">Шерсть<br>уберём.<br>Драму<br>оставим.</h1>
           <p class="hero-description">Наведём красоту от ушей до хвоста.<br>Да, название мы тоже долго выбирали.</p>
-          <a class="button button-dark" href="#services">Примерить груминг <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="#services">Примерить груминг <span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></a>
         </div>
         <div class="hero-scene">
-          <div class="hero-note"><span aria-hidden="true">↙</span> он просто<br>спросить</div>
+          <div class="hero-note"><span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4 4 20M4 5v15h15"/></svg></span> он просто<br>спросить</div>
           <button class="mascot-button" type="button" aria-label="Почесать чудика за ухом">
             <img class="hero-mascot" src="assets/mascot-hero.webp" alt="Лохматый чёрный чудик с огромными жёлтыми глазами и растопыренными лапами" width="1254" height="1254" fetchpriority="high">
           </button>
           <p class="hero-speech" aria-live="polite">Я вообще-то<br>и так красивый.</p>
           <span class="pet-hint">Нажми на чудика. Ему надо.</span>
-          <div class="round-seal" aria-label="Уход со всех сторон"><span>Уход со всех</span><b>сторон</b><span aria-hidden="true">↻</span></div>
+          <div class="round-seal" aria-label="Уход со всех сторон"><span>Уход со всех</span><b>сторон</b><span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 8a9 9 0 1 0 1 7M20 3v5h-5"/></svg></span></div>
         </div>
-        <div class="hero-bottom"><span>Любим всех. Даже кусачих.</span><a href="#services">Осторожно, дальше котики <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-bottom"><span>Любим всех. Даже кусачих.</span><a href="#services">Осторожно, дальше котики <span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v18m-7-7 7 7 7-7"/></svg></span></a></div>
       </section>
   </div>
 
@@ -63,16 +63,16 @@
       <div class="section-heading"><h2 id="services-title">Сделаем<br>вот такого.</h2><p>Выбирай процедуру.<br>Чудик уже морально готов.<br><span class="muted">Почти.</span></p></div>
       <div class="fitting-room">
         <div class="service-list" role="tablist" aria-label="Примерочная груминга" aria-orientation="vertical">
-          <button id="tab-nails" class="service-tab" type="button" role="tab" aria-selected="true" aria-controls="service-preview" tabindex="0" data-service="nails"><span class="service-name">Коготочки<small>Царапать только морально</small></span><span class="service-price">500 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
-          <button id="tab-brushed" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="brushed"><span class="service-name">Вычёсывание<small>Достанем из кота ещё одного кота</small></span><span class="service-price">1 200 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
-          <button id="tab-teeth" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="teeth"><span class="service-name">Зубки<small>Улыбка с намёком на угрозу</small></span><span class="service-price">700 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
-          <button id="tab-shaved" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="shaved"><span class="service-name">Стрижка<small>Всё лишнее оставим в салоне</small></span><span class="service-price">3 000 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
+          <button id="tab-nails" class="service-tab" type="button" role="tab" aria-selected="true" aria-controls="service-preview" tabindex="0" data-service="nails"><span class="service-name">Коготочки<small>Царапать только морально</small></span><span class="service-price">500 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></button>
+          <button id="tab-brushed" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="brushed"><span class="service-name">Вычёсывание<small>Достанем из кота ещё одного кота</small></span><span class="service-price">1 200 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></button>
+          <button id="tab-teeth" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="teeth"><span class="service-name">Зубки<small>Улыбка с намёком на угрозу</small></span><span class="service-price">700 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></button>
+          <button id="tab-shaved" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="service-preview" tabindex="-1" data-service="shaved"><span class="service-name">Стрижка<small>Всё лишнее оставим в салоне</small></span><span class="service-price">3 000 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></button>
           <p class="price-note">Цены для нашей выдуманной вселенной. Настоящего салона пока нет, а котики уже есть.</p>
         </div>
         <div id="service-preview" class="service-preview" role="tabpanel" aria-labelledby="tab-nails" tabindex="0">
           <span class="preview-caption">Примерочная груминга</span>
           <div class="preview-image-wrap"><img id="service-image" src="assets/mascot-nails.webp" alt="Чудик гордо показывает аккуратно подстриженные коготочки" width="1024" height="1024" loading="lazy"></div>
-          <div class="preview-bottom"><p id="service-quote" aria-live="polite">Теперь царапаю<br>только морально.</p><button id="add-service" class="round-button" type="button" aria-label="Добавить коготочки в талон"><span aria-hidden="true">+</span></button></div>
+          <div class="preview-bottom"><p id="service-quote" aria-live="polite">Теперь царапаю<br>только морально.</p><button id="add-service" class="round-button" type="button" aria-label="Добавить коготочки в талон"><span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></div>
           <p id="service-feedback" class="service-feedback" role="status"></p>
         </div>
       </div>
@@ -82,7 +82,7 @@
   <section id="characters" class="characters" aria-labelledby="characters-title">
     <div class="wrap character-layout">
       <div class="character-portrait"><img src="assets/mascot-shaved.webp" alt="Армен: огромная пушистая голова, подстриженное серое пузо, лапы-варежки и хвост с кисточкой" width="1024" height="1536" loading="lazy"><span class="character-label">Армен. Лицо компании.<br>И остальные её части.</span></div>
-      <div class="character-story"><p class="small-heading">Знакомые всё лица</p><h2 id="characters-title">Внутри лев.<br>Снаружи<br>тоже почти.</h2><p>Чудик пришёл просто подровнять.<br>Армен вышел новым человеком.<br>В смысле, котом.</p><p>Эти двое знают: красота проходит,<br>а характер остаётся навсегда.</p><a class="text-link" href="#ticket">Собрать свой сеанс красоты <span aria-hidden="true">↗</span></a><span class="story-aside">«Голову не трогайте.<br>Там мысли.»</span></div>
+      <div class="character-story"><p class="small-heading">Знакомые всё лица</p><h2 id="characters-title">Внутри лев.<br>Снаружи<br>тоже почти.</h2><p>Чудик пришёл просто подровнять.<br>Армен вышел новым человеком.<br>В смысле, котом.</p><p>Эти двое знают: красота проходит,<br>а характер остаётся навсегда.</p><a class="text-link" href="#ticket">Собрать свой сеанс красоты <span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></a><span class="story-aside">«Голову не трогайте.<br>Там мысли.»</span></div>
     </div>
   </section>
 
@@ -104,7 +104,7 @@
         </fieldset>
         <div class="ticket-total"><span>Итого, за красоту</span><output id="ticket-total">500 ₽</output></div>
         <p class="ticket-bonus">Осуждающий взгляд в подарок</p>
-        <button id="ticket-submit" class="button button-dark" type="submit">Выписать талон <span aria-hidden="true">↗</span></button>
+        <button id="ticket-submit" class="button button-dark" type="submit">Выписать талон <span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></span></button>
         <p id="ticket-status" class="ticket-status" role="status"></p>
         <div id="ticket-result" class="ticket-result" hidden><p><strong>Красота согласована.</strong><br>С котом пока нет.</p><button class="text-link" id="copy-ticket" type="button">Скопировать талон</button></div>
         <p class="ticket-fineprint">Без СМС, предоплаты и личных данных.<br>Только кот. Только красота.</p>
@@ -112,6 +112,6 @@
     </div>
   </section>
   </main>
-  <footer class="site-footer"><div class="wrap"><div class="footer-top"><a href="#" class="footer-brand">кошачье очко<span aria-hidden="true">✳</span></a><p>Красивые коты.<br>Большие планы.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> · Придумано с любовью и немного с недосыпа</span><a href="about.html">Об этом безобразии</a><a href="https://github.com/IgorMitrofanov/cat-ass" target="_blank" rel="noopener noreferrer">Код на GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap"><div class="footer-top"><a href="#" class="footer-brand">кошачье очко<span aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M4.2 19.8 19.8 4.2"/></svg></span></a><p>Красивые коты.<br>Большие планы.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> · Придумано с любовью и немного с недосыпа</span><a href="about.html">Об этом безобразии</a><a href="https://github.com/IgorMitrofanov/cat-ass" target="_blank" rel="noopener noreferrer">Код на GitHub <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20 20 4M5 4h15v15"/></svg></a></div></div></footer>
 </body>
 </html>

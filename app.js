@@ -1,3 +1,9 @@
+const iconPaths = {
+  arrow: 'M4 20 20 4M5 4h15v15',
+  check: 'M5 12l4 4L19 6',
+  plus: 'M12 5v14M5 12h14'
+};
+const icon = name => `<svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${iconPaths[name]}"/></svg>`;
 const procedures = {
   nails: { name: 'Коготочки', price: 500, image: 'mascot-nails.webp', quote: 'Теперь царапаю<br>только морально.', alt: 'Чудик гордо показывает аккуратно подстриженные коготочки' },
   brushed: { name: 'Вычёсывание', price: 1200, image: 'mascot-brushed.webp', quote: 'Из меня достали<br>ещё одного меня.', alt: 'Пушистый вычесанный чудик важно позирует с расчёской' },
@@ -26,7 +32,7 @@ const selected = () => checks.filter(input => input.checked).map(input => input.
 function syncAddButton() {
   const added = checks.find(input => input.value === activeService).checked;
   addButton.classList.toggle('added', added);
-  addButton.innerHTML = `<span aria-hidden="true">${added ? '✓' : '+'}</span>`;
+  addButton.innerHTML = icon(added ? 'check' : 'plus');
   addButton.setAttribute('aria-label', added ? `${procedures[activeService].name} уже в талоне` : `Добавить ${procedures[activeService].name.toLowerCase()} в талон`);
 }
 function showService(id, updateUrl = true) {
@@ -80,7 +86,7 @@ function updateTicket() {
   total.value = money(selected().reduce((sum, id) => sum + procedures[id].price, 0));
   result.hidden = true;
   ticketText = '';
-  submitButton.innerHTML = 'Выписать талон <span aria-hidden="true">↗</span>';
+  submitButton.innerHTML = `Выписать талон <span aria-hidden="true">${icon('arrow')}</span>`;
   status.textContent = selected().length ? '' : 'Выбери хотя бы одну процедуру. Даже коту нужен план.';
   syncAddButton();
 }
@@ -102,7 +108,7 @@ form.addEventListener('submit', event => {
   ticketText = ['КОШАЧЬЕ ОЧКО', 'Шуточный талон на красоту', '', ...ids.map(id => `${procedures[id].name}: ${money(procedures[id].price)}`), '', `Итого: ${money(ids.reduce((sum, id) => sum + procedures[id].price, 0))}`, 'Осуждающий взгляд: в подарок.', '', 'Это шутка, а не настоящая запись. Кот согласия не давал.'].join('\n');
   result.hidden = false;
   status.textContent = 'Талон готов. Никуда не отправлен, никто не побрит.';
-  submitButton.innerHTML = 'Талон выписан <span aria-hidden="true">✓</span>';
+  submitButton.innerHTML = `Талон выписан <span aria-hidden="true">${icon('check')}</span>`;
 });
 document.querySelector('#copy-ticket').addEventListener('click', async () => {
   if (!ticketText) return;
