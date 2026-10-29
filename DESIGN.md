@@ -10,7 +10,7 @@ Five-line plan:
 1. Expressive character portraits and oversized, heavy Cyrillic typography.
 2. Tangerine for the opening stage, warm paper for services, ink for the closing scene.
 3. Dela Gothic One for display, Golos Text for reading and figures; fonts hosted locally.
-4. Asymmetric hero; procedure list beside a large changing character; a two-character story; an interactive receipt.
+4. Asymmetric hero; procedure list beside a large changing character; Жмых before and after grooming; an interactive receipt.
 5. The character's changing pose and indignant reply explain each procedure.
 
 ## Tokens and locks
@@ -23,7 +23,7 @@ Interface icons must use SVG paths with currentColor or CSS geometry. Never use 
 
 ## Images
 
-The first supplied reference establishes the shaggy black creature with large yellow-green eyes. The shower and wet fur are incidental and must not define the brand. The second supplied reference establishes the shorn cat with a round black head, grey body, black paws and lion tail. Polina's collage establishes warmth, varied expressions, and domestic absurdity. Generated cutouts preserve these identities. No generic stock pet photographs.
+The first supplied reference establishes the shaggy black creature with large yellow-green eyes. The shower and wet fur are incidental and must not define the brand. The final user direction keeps one mascot only: Zhmykh. The separate round-headed cat was removed. The shorn pose preserves Zhmykh's own face, pointed ears, proportions and eyes. The supplied collage establishes warmth, varied expressions and domestic absurdity. No generic stock pet photographs.
 
 ## Deliberate choices
 
@@ -33,8 +33,7 @@ This is a fictional salon. All prices are illustrative; two originate in the sup
 
 ## Glossary
 
-- Чудик: first shaggy mascot.
-- Армен: second, shorn mascot, a fictional character on the site.
+- Жмых: the single named mascot in shaggy, brushed, manicure, tooth-care and shorn states.
 - Примерочная груминга: service selector and matching character image.
 - Талон красоты: local joke summary, not a real booking.
 

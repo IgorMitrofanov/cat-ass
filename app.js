@@ -5,10 +5,10 @@ const iconPaths = {
 };
 const icon = name => `<svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${iconPaths[name]}"/></svg>`;
 const procedures = {
-  nails: { name: 'Коготочки', price: 500, image: 'mascot-nails.webp', quote: 'Теперь царапаю<br>только морально.', alt: 'Чудик гордо показывает аккуратно подстриженные коготочки' },
-  brushed: { name: 'Вычёсывание', price: 1200, image: 'mascot-brushed.webp', quote: 'Из меня достали<br>ещё одного меня.', alt: 'Пушистый вычесанный чудик важно позирует с расчёской' },
-  teeth: { name: 'Зубки', price: 700, image: 'mascot-teeth.webp', quote: 'Кусаю с ослепительной<br>улыбкой.', alt: 'Чудик улыбается чистыми белыми зубками и держит щётку' },
-  shaved: { name: 'Стрижка', price: 3000, image: 'mascot-shaved.webp', quote: 'Характер под ноль<br>не берётся.', alt: 'Подстриженный Армен с пушистой головой, лапами-варежками и хвостом льва' }
+  nails: { name: 'Коготочки', price: 500, image: 'mascot-nails.webp', quote: 'Теперь царапаю<br>только морально.', alt: 'Жмых гордо показывает аккуратно подстриженные коготочки' },
+  brushed: { name: 'Вычёсывание', price: 1200, image: 'mascot-brushed.webp', quote: 'Из меня достали<br>ещё одного меня.', alt: 'Пушистый вычесанный Жмых важно позирует с расчёской' },
+  teeth: { name: 'Зубки', price: 700, image: 'mascot-teeth.webp', quote: 'Кусаю с ослепительной<br>улыбкой.', alt: 'Жмых улыбается чистыми белыми зубками и держит щётку' },
+  shaved: { name: 'Стрижка', price: 3000, image: 'mascot-zhmykh-shaved.webp', quote: 'Характер под ноль<br>не берётся.', alt: 'Подстриженный Жмых с теми же огромными глазами и острыми ушами' }
 };
 const money = value => `${new Intl.NumberFormat('ru-RU').format(value)} ₽`;
 const tabs = [...document.querySelectorAll('.service-tab')];

@@ -1,6 +1,10 @@
 # Кошачье очко
 
-Шуточный лендинг груминг-салона с двумя характерными котами. Дизайн сделан по [telltale](https://github.com/IgorMitrofanov/telltale-design).
+Шуточный лендинг груминг-салона с Жмыхом в разных состояниях после ухода. Дизайн сделан по [telltale](https://github.com/IgorMitrofanov/telltale-design).
+
+Доступны [первая версия](https://igormitrofanov.github.io/cat-ass/), [новая версия по specificity](https://igormitrofanov.github.io/cat-ass/v2/) и [сравнение в одинаковом окне](https://igormitrofanov.github.io/cat-ass/compare/).
+
+V2 написана с нуля: отдельные HTML, CSS и JavaScript, другой сюжет и типографика. Общие изображения и цены сохранены для сравнения. Использован локальный снимок `round5_with_ru_patterns` из ветки `specificity`; происхождение зафиксировано в `skills/telltale-specificity/PROVENANCE.md`. Частные файлы архива и ответы участников не копировались.
 
 ## Локально
 
@@ -14,7 +18,7 @@ npm run dev
 
 ## GitHub Pages
 
-Workflow `.github/workflows/pages.yml` публикует `dist/` после push в `main`. В настройках репозитория Pages должен использовать GitHub Actions. Все пути относительные и работают под `/cat-ass/`.
+Workflow `.github/workflows/pages.yml` публикует обе версии и страницу сравнения из `dist/` после push в `main`. В настройках репозитория Pages должен использовать GitHub Actions. Все пути относительные и работают под `/cat-ass/`, `/cat-ass/v2/` и `/cat-ass/compare/`.
 
 ## Поведение
 
